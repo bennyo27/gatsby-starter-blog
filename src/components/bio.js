@@ -17,6 +17,7 @@ function Bio() {
       query={bioQuery}
       render={data => {
         const { author, social } = data.site.siteMetadata
+        console.log(data.site.siteMetadata)
         return (
           <div
             style={{
@@ -38,11 +39,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
+              Written by <strong>{author}</strong> who lives and works in Los
+              Angeles building useful things.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+              <a href={`https://www.linkedin.com/in/benny-oseguera/`}>
+                You should connect with him on LinkedIn.
               </a>
             </p>
           </div>
